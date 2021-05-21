@@ -11,7 +11,15 @@ MooseSays("I really am enthusiastic");
 //ask a question
 
 bool isTrue = MooseAsks("Is Canada real?");
-Console.WriteLine(isTrue);
+if (isTrue)
+    {
+        MooseSays("Really? It seems very unlikely.");
+    }
+    else 
+    {
+        MooseSays("I  K N E W  I T  !!!");
+    }
+
 bool MooseAsks(string question)
 {
     Console.Write($"{question} (Y/N): ");
@@ -25,11 +33,11 @@ bool MooseAsks(string question)
 
     if (answer == "y")
     {
-        return true;
+       return true;
     }
     else 
     {
-        return false;
+       return false;
     }
 }
 
